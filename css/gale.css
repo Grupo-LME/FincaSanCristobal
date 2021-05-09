@@ -232,6 +232,7 @@ nav ul{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 10;
 }
 .nav-links li{
     display: block;
