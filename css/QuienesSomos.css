@@ -5,6 +5,8 @@
 }
 body{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 #container{
     background-image:linear-gradient(rgb(45, 78, 226),rgba(45, 78, 226, 0.712));
@@ -17,7 +19,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 5%;
+    padding: 20px 5%;
     background-color: #fff;
 }
 .logo{
@@ -38,95 +40,216 @@ header{
 .nav-links li a:hover{
     color: #1C419E;
 }
-.titulo {
-    position: absolute;
-    color: #fff;
-    top: 45%;
-    left: 39%;
-    font-size: 580%;
-    font-family: 'Amatic SC', cursive;
+nav #icon{
+    color: #000;
+    font-size: 30px;
+    line-height: 80px;
+    float: left;
+    margin-right: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
-.titulo2{
-    position: absolute;
-    color: #fff;
-    top: 55%;
-    left: 45%;
-    font-size: 380%;
-    font-family: 'Amatic SC', cursive;
+/*RESPONSIVE*/
+@media (max-width: 1320px){
+    .nav-links ul{
+        margin-right: 5px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 5px;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
 }
-.btn {
-    position: absolute;
-    color: #fff;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 1.5vw;
+
+@media (max-width: 1285px){
+    nav ul{
+        margin-right: 0px;
+    }
+    .nav-links li a{
+        font-size: 17px;
+        padding: 7px 0;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
 }
-#btn1 {
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 15px;
-    transition: 0.6s ease;
-    color: #fff;
+
+@media (max-width: 1125px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9f9f9;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav-links li{
+        display: block;
+        margin: 35px 0;
+    }
+    .img-section{
+        height: 300px;
+    }
+    nav ul.show{
+        left: 0;
+    }
+    #carouselExampleCaptions{
+        z-index: -1; 
+    }
+    .logo{
+        visibility: hidden;
+    }
 }
-#btn1:hover {
-    background-color: #fff;
-    color: black;
+/*carrusel*/
+.carousel-item::before{
+    content: ""; 
+    display: block; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+    background: #000;
+    opacity: 0.7; 
 }
-.descripcion{
-    width: 100%;
-    height: 100%;
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px; 
+    padding-right: 100px;
 }
-.par1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    margin-left: 3%;
-    margin-right: 55%;
+.carousel-caption h5{
+    font-size: 100px; 
+}
+.tituloPrincipal1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+.tituloPrincipal2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+.fincades{
     text-align: justify;
-    margin-top: 12%;
-    padding: 1%;
-    line-height: 40px; 
-   
-}
-.finca{
-    width: 30%;
-    margin-top: 1%;
-    margin-right: 9%;
-}
-.par3, .finca{
-    float: right;
-}
-.par3{
-    font-family: 'Amatic SC', cursive;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 150%;
-    margin-left: 1%;
-    margin-right: 55%;
-    text-align: justify; 
-}
-.Horarios{
-    margin-top: 10%;
 }
 table{
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 130%;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 110% ;
 }
-.horario{
-    font-size: 150%;
-    padding-bottom: 5px;
-    margin-top: 4%;
+th{
+    background: rgb(30, 153, 40);
+    color: white;
 }
-.horario, .contactanos{
-    float: left;
+th, td{
+    width: 25%;
+    vertical-align: top;
+    padding: 0.3em;
+    caption-side: bottom;
+    padding: 10px;
+}
+#numeral{
+    width: 2%;
+}
+#dato{
+    width: 15%;
+}
+#dato2{
+    width: 5%;
+}
+#dato3{
+    width: 5%;
 }
 .mapa{
     margin-top: 5%;
+    left: 0;
+    width: 100% !important;
 }
-.contactanos{
-    font-size: 490%;
-    margin-top: 5%;
-    margin-left: 20%;
-    font-family: 'Amatic SC', cursive;
+#titulofinal{
+    font-size: 700%; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 50vh;
+    margin-top: 10%;
+}
+#titulofinal:hover{
+    color:rgb(30, 153, 40);
+    transition: 1s ease-in;
+}
+@media only screen and (max-width: 800px) {
+    #titulofinal{
+        font-size: 500%; 
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    table{
+        width: 60%;
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto; 
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 90% ;
+    }
+    .tituloPrincipal1{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 150%;
+    }
+    .tituloPrincipal2{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 150%;
+    }
+    #titulofinal{
+        font-size: 400%; 
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #titulofinal{
+        font-size: 400%; 
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #titulofinal{
+        font-size: 300%; 
+        text-align: center;
+        height: 20vh;
+        margin-top: 5%;
+    }
 }
 /*----------FOOTER----------*/
 .footer-contenedor{
@@ -192,4 +315,10 @@ table{
     color: #fff;
     text-align: center;
     padding-top: 15px;
+}
+@media (max-width: 430px){
+    .footer-menu ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
 }
