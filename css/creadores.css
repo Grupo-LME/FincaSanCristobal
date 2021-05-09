@@ -58,19 +58,19 @@ h2{
 .perfiles, h2 {
     animation-duration: 3s;
     animation-name: slidein;
-  }
-  
-  @keyframes slidein {
+}
+
+@keyframes slidein {
     from {
       margin-left: 100%;
       width: 300%
-    }
+  }
   
-    to {
+  to {
       margin-left: 0%;
       width: 100%;
-    }
   }
+}
 .perfiles{
     display: flex;
     justify-content: center;
@@ -230,8 +230,8 @@ h2{
         width: 18%;
         margin: 0 auto;
         height: 500px;
-     }
-     .perfil div img{
+    }
+    .perfil div img{
         display: flex;
         width: 175px;
         margin: 0 auto;
@@ -250,9 +250,9 @@ h2{
         font-size: 15px;
         color: #f2f2f2;
     }
-    }
+}
 
-    @media (max-width: 1285px){
+@media (max-width: 1285px){
     nav ul{
         margin-right: 0px;
     }
@@ -264,128 +264,128 @@ h2{
         width: 19.5%;
         margin: 0 auto;
         height: 500px;
-     }
     }
-    
-    @media (max-width: 1125px){
+}
+
+@media (max-width: 1125px){
     nav #icon{
       display: block;
-    }
-    nav ul{
-        position: fixed;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f9f9f9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+.nav-links li{
+    display: block;
+    margin: 35px 0;
+}
+.img-section{
+    height: 300px;
+}
+nav ul.show{
+  left: 0;
+}
+.perfiles{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.perfil{
+   width: 70%;
+   margin: 0 auto;
+   height: 500px;
+}
+.perfil div img{
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    height: 250px;
+    border-radius: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.perfil h4{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 22px;
+}
+.perfil p{
+    text-align: center;
+    font-size: 18px;
+    color: #f2f2f2;
+}
+}
+@media (max-width: 720px){
+    .section{
         width: 100%;
-        height: 100vh;
-        background: #f9f9f9;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 0;
+        height: 30vh;
+    }    
+    .card div a{
+        font-size: 14px;
     }
-    .nav-links li{
-        display: block;
-        margin: 35px 0;
-    }
-    .img-section{
-        height: 300px;
-    }
-      nav ul.show{
-          left: 0;
-      }
-      .perfiles{
-          display: block;
-          width: 100%;
-          text-align: center;
-          margin: 0 auto;
-          margin-bottom: 50px;
-      }
-      .perfil{
-         width: 70%;
-         margin: 0 auto;
-         height: 500px;
-      }
-      .perfil div img{
-        display: flex;
-        width: 250px;
+    .perfil{
+        width: 70%;
         margin: 0 auto;
-        height: 250px;
-        border-radius: 100%;
-        margin-top: 15px;
-        margin-bottom: 15px;
     }
-    .perfil h4{
+}
+@media (max-width: 600px){
+    .img-section{
+        height: 200px;
+    } 
+    .cards{
+        display: block;
         text-align: center;
-        color: #f2f2f2;
-        font-size: 22px;
+        width: 100%;
+        margin: 0 auto;
     }
-    .perfil p{
-        text-align: center;
-        font-size: 18px;
-        color: #f2f2f2;
-    }
-    }
-    @media (max-width: 720px){
-        .section{
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            top: 0;
-            height: 30vh;
-        }    
-        .card div a{
-            font-size: 14px;
-        }
-        .perfil{
-            width: 70%;
-            margin: 0 auto;
-         }
-    }
-    @media (max-width: 600px){
-        .img-section{
-            height: 200px;
-        } 
-        .cards{
-            display: block;
-            text-align: center;
-            width: 100%;
-            margin: 0 auto;
-        }
-        .card{    
-            display: flex;
+    .card{    
+        display: flex;
         justify-content: center;
         justify-items: center; 
-            margin: 0 auto;
-            margin-bottom: 15px;
-        }
-        .card div a{
-            font-size: 12px;
-        }   
-        .perfil p{
-            text-align: center;
-            font-size: 14px;
-            color: #f2f2f2;
-        }
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
-    @media (max-width: 550px){
-        .section{
-            height: 20vh;
-            background-size: cover;
-        }
-        .img-section{
-            height: 150px;
-        }
-        .perfil{
-            width: 80%;
-            margin: 0 auto;
-         }
+    .card div a{
+        font-size: 12px;
+    }   
+    .perfil p{
+        text-align: center;
+        font-size: 14px;
+        color: #f2f2f2;
     }
-    @media (max-width: 430px){
-        .footer-menu ul li{
-            display: block;
-            margin: 10px 0 10px 0;
-        }
-        .perfil{
-            width: 80%;
-            margin: 0 auto;
-            height: 500px;
-         }
+}
+@media (max-width: 550px){
+    .section{
+        height: 20vh;
+        background-size: cover;
     }
+    .img-section{
+        height: 150px;
+    }
+    .perfil{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 430px){
+    .footer-menu ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+    .perfil{
+        width: 80%;
+        margin: 0 auto;
+        height: 500px;
+    }
+}
