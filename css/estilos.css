@@ -2,11 +2,9 @@
     display: flex;
     width: 100%;
     height: 80vh;
-   padding: 4% 2%;
-   box-sizing: border-box;
-  
+    padding: 4% 2%;
+    box-sizing: border-box;
 }
-
 .box{
     flex: 1;
     overflow: hidden;
@@ -15,7 +13,6 @@
     line-height: 0;
     transition: all 600ms;
 }
-
 .box > img{
     width: 100%;
     height: calc(100% - 10vh);
@@ -40,13 +37,23 @@
     width: 100%;
     height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 1000px){
+    #sub1{
+        font-size: 15px;
+    }
+    #sub2{
+        font-size: 15px;
+    }
+    #sub3{
+        font-size: 15px;
+    }
+    #sub4{
+        font-size: 15px;
+    }
+}  
+@media (max-width: 430px){
+    .footer-menu ul li{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+}
