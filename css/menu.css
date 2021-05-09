@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -70,19 +71,19 @@ h1{
     background-color: #1C419E;
     text-shadow: rgb(43, 33, 18) 2px 2px 2px;
     
-    }
+}
 
 .item{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-min-height: 100vh;
-background-position: center;
-background-size: cover;
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.884)), url("../img/background.jpg");
-background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.884)), url("../img/background.jpg");
+    background-attachment: fixed;
 
 
 }
@@ -254,9 +255,9 @@ background-attachment: fixed;
     }
 
     
-    }
-    
-    @media (max-width: 1285px){
+}
+
+@media (max-width: 1285px){
     nav ul{
         margin-right: 0px;
     }
@@ -272,49 +273,49 @@ background-attachment: fixed;
         width: 100%;
         
     }
-    }
-    
-    @media (max-width: 1125px){
+}
+
+@media (max-width: 1125px){
     nav #icon{
       display: block;
-    }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #f9f9f9;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 10;
-    }
-    .nav-links li{
-        display: block;
-        margin: 35px 0;
-    }
-    .img-section{
-        height: 300px;
-    }
-      nav ul.show{
-          left: 0;
-      }
-    }
-    
-    @media (max-width: 430px){
-        .footer-menu ul li{
-            display: block;
-            margin: 10px 0 10px 0;
-        }
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #f9f9f9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;
+}
+.nav-links li{
+    display: block;
+    margin: 35px 0;
+}
+.img-section{
+    height: 300px;
+}
+nav ul.show{
+  left: 0;
+}
+}
 
-        .sticky{
-            margin-top: 20px;
-            align-items: center;
-            width: 100%;
-            margin-left: 130%;
-        }
+@media (max-width: 430px){
+.footer-menu ul li{
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+.sticky{
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    margin-left: 130%;
+}
 
 
 
-        
-    }
+
+}
